@@ -1,0 +1,123 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgb(227, 225, 245);
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(98, 1, 98);
+    border: none;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 5px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgb(186, 2, 186);
+    cursor: pointer;
+}
+
+
+.mark-btn {
+    height: 35px;
+    width: 140px;
+    color: white;
+    background-color: rgb(98, 1, 98);
+    border: none;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 5px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(98, 1, 98);
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    margin: 8px;
+    color: rgb(98, 1, 98);
+    width: 600px;
+    height: 70px;
+}
+
+.list-item {
+    font-size: 20px;
+    font-weight: 500;
+}
+.list:hover {
+    background-color: hsl(248, 73%, 94%);
+}
+
+.input {
+    padding: 5px 10px 5px 10px;
+    border: 2px solid rgb(98, 1, 98);
+    border-radius: 10px;
+    background-color: #ddd9fa;
+    color: rgb(98, 1, 98);
+    height: 50px;
+    width: 300px;
+    margin-top:10px ;
+    font-size: larger;
+
+}
+
+.input:hover {
+    box-shadow: 0 0 10px rgb(98, 1, 98);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.css-10o2lyd-MuiStack-root>.MuiTextField-root,
+.css-10o2lyd-MuiStack-root>.MuiPickersTextField-root {
+    /* margin-left: 225px; */
+    
+    background-color: #ddd9fa;
+    margin-bottom:20px; 
+    border:1px solid rgb(98, 1, 98);
+    border-radius: 8px;
+
+}
+
+
+.css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root{
+
+ 
+}
+
+
+/* .css-qru2u2-MuiPickersSectionList-root-MuiPickersInputBase-sectionsContainer-MuiPickersOutlinedInput-sectionsContainer{
+
+
+    font-size:0.5rem;
+    width:135px;
+    padding:15.5px 0;
+
+} */
