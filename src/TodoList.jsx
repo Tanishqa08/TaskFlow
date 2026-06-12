@@ -21,7 +21,7 @@ export default function TodoList() {
        
         <div className="container">
         
-        <BasicDatePicker className="datepicker" />
+        <BasicDatePicker />
             <Inputbox input={input} setInput={setInput} addNewTask={addNewTask} />
             <List todos={todos} setTodos={setTodos} />
         </div>

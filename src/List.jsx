@@ -11,10 +11,10 @@ export default function List({ todos, setTodos }) {
                         { textDecorationLine: "line-through", color: "green" } : {}} className="list-item">
                         {todo.task}
                     </span>
-                    <span>
-                        <DeleteBtn id={todo.id} setTodos={setTodos} />
-                        <MarkAsDonebtn id={todo.id} setTodos={setTodos} />
-                    </span>
+                    <div className="list-btn">
+                        <span><DeleteBtn id={todo.id} setTodos={setTodos} /></span>
+                        <span><MarkAsDonebtn id={todo.id} setTodos={setTodos} /></span>
+                    </div>
                 </li>
             ))}
         </ul>
