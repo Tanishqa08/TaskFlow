@@ -20,8 +20,8 @@ export default function List({ todos, setTodos }) {
         </ul>
         <br></br>
         <div className="buttons">
-        <span> <MarkAllAsDonebtn setTodos={setTodos} /></span>
-        <span><ClearDoneBtn setTodos={setTodos} /></span>
+            <span> <MarkAllAsDonebtn setTodos={setTodos} /></span>
+            <span><ClearDoneBtn setTodos={setTodos} /></span>
         </div>
     </div>);
 }

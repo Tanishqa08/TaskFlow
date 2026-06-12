@@ -1,10 +1,10 @@
 import AddButton from "./AddButton";
-export default function Inputbox({ input, setInput,addNewTask }) {
+export default function Inputbox({ input, setInput, addNewTask }) {
     return (
         <div>
             <input
                 type="text"
-                placeholder= "add a new task..."
+                placeholder="add a new task..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 className="input"

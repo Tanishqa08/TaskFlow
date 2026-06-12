@@ -1,5 +1,3 @@
-import MarkAllAsDonebtn from "./MarkAllAsDonebtn";
-
 export default function ClearDoneBtn({ setTodos }) {
     return (
         <button onClick={() => clearDone(setTodos)} className="btn mark-btn">
