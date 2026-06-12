@@ -1,5 +1,5 @@
 import CheckIcon from '@mui/icons-material/Check';
-export default function MarkAsDonebtn({ id, setTodos }) {
+export default function MarkAsDonebtn({  setTodos, id }) {
     return (
         <button onClick={() => markAsDone(id, setTodos)} className="btn">
             <CheckIcon />

@@ -1,4 +1,4 @@
-export default function MarkAllAsDonebtn({ setTodos }) {
+export default function MarkAllAsDonebtn({ setTodos}) {
     return (
         <button onClick={() => markAllAsDone(setTodos)} className="mark-btn btn">
             mark all done

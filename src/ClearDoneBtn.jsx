@@ -1,14 +1,17 @@
 import MarkAllAsDonebtn from "./MarkAllAsDonebtn";
 
-export default function ClearDoneBtn(setTodos, Todos) {
+export default function ClearDoneBtn({ setTodos }) {
     return (
-    <button onClick={clearDone} className="btn mark-btn">
-    clear done
-    </button>
+        <button onClick={() => clearDone(setTodos)} className="btn mark-btn">
+            clear done
+        </button>
     );
+
 }
 
-let clearDone = () => {
+let clearDone = (setTodos) => {
     console.log("clear done");
-
-}
+    setTodos((prevTodos) => {
+        return prevTodos.filter((todo) => todo.isDone == false);
+    });
+};
