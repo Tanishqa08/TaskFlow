@@ -11,7 +11,7 @@ export default function BasicDatePicker() {
         <DatePicker
           label="Date"
           slotProps={{ textField: { size: 'small' } }}
-          renderInput={(params) => <TextField {...params} size="small" />}
+
           sx={{
             width: '190px',
             minWidth: 0,

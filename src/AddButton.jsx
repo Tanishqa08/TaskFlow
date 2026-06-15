@@ -6,3 +6,5 @@ export default function AddButton({ addNewTask }) {
         </button>
     );
 }
+
+

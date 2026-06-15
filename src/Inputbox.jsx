@@ -8,6 +8,11 @@ export default function Inputbox({ input, setInput, addNewTask }) {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 className="input"
+                onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                        addNewTask();
+                    }
+                }}
             />
             <br></br> <br></br>
             <AddButton addNewTask={addNewTask} />

@@ -7,11 +7,12 @@ export default function MarkAsDonebtn({  setTodos, id }) {
     );
 }
 
+
 let markAsDone = (id, setTodos) => {
     setTodos((prevtodos) =>
         prevtodos.map((todo) => {
             if (todo.id === id) {
-                return { ...todo, isDone: true };
+                return { ...todo, isDone:!todo.isDone };
             } else {
                 return todo;
             }
