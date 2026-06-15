@@ -12,7 +12,7 @@
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-} 
+}
 
 .btn {
     color: white;
@@ -92,7 +92,7 @@
     margin-top: 10px;
     font-size: larger;
     font-weight: 400;
-    margin-top:35px;
+    margin-top: 35px;
 
 }
 
@@ -113,10 +113,10 @@ ul {
     margin-bottom: 20px;
     border: 0.5px solid rgb(98, 1, 98);
     border-radius: 8px;
-    
-} 
 
-.progress-container{
+}
+
+.progress-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -124,7 +124,7 @@ ul {
     margin-top: 25px;
 }
 
-.card{
+.card {
     border: 2px solid rgb(98, 1, 98);
     border-radius: 10px;
     background-color: white;
@@ -135,27 +135,78 @@ ul {
     height: 30px;
     text-align: left;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 1px;
 }
-.card:hover{
+
+.card:hover {
     background-color: hwb(248 90% 2%);
     cursor: pointer;
 
 }
-.count{
+
+.count {
     font-size: 25px;
     font-weight: 600;
     padding-top: 7px;
     margin: 0px;
 }
-.progress{
+
+.progress {
     font-size: 16px;
     font-weight: 500;
     margin: 0px;
     padding-bottom: 7px;
-} 
+}
 
 
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.list {
+    width: 500px;
+}
+
+@media(max-width: 650px) {
+    .container {
+        width: 100%;
+    }
+
+    .list {
+        width: 350px;
+    }
+
+    .progress-container {
+        flex-wrap: wrap;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .mark-btn {
+        width: 100px;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .list {
+        width: 250px;
+    }
+}
