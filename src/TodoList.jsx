@@ -4,6 +4,7 @@ import "./Todo.css";
 import Inputbox from "./Inputbox";
 import List from "./List";
 import BasicDatePicker from "./BasicDatePicker";
+import ProgressOfTodo from "./ProgressOfTodo";
 
 export default function TodoList() {
     let [todos, setTodos] = useState([{ id: uuidv4(), task: "sample task", isDone: false }]);
@@ -22,6 +23,7 @@ export default function TodoList() {
         <div className="container">
         
         <BasicDatePicker />
+        <ProgressOfTodo todos={todos}/>
             <Inputbox input={input} setInput={setInput} addNewTask={addNewTask} />
             <List todos={todos} setTodos={setTodos} />
         </div>
