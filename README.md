@@ -16,11 +16,11 @@ Tasks are stored using Local Storage, allowing users to retain their data even a
 
 ### Desktop View
 
-![Desktop View](TodoApp\TodoList-project\image\snapshot1.png)
+![Desktop View](./screenshots/snapshot1.png)
 
 ### Mobile View
 
-![Mobile View](TodoApp\TodoList-project\image\snapshot2.png)
+![Mobile View](./screenshots/snapshot2.png)
 
 ## Features
 
