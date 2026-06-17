@@ -25,7 +25,7 @@
 }
 
 .btn:hover {
-    box-shadow: 0 0 10px rgb(186, 2, 186);
+    box-shadow: 0 0 10px rgb(98, 1, 98);
     cursor: pointer;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .input:hover {
-    box-shadow: 0 0 10px rgb(98, 1, 98);
+    box-shadow: 0 0 15px rgb(98, 1, 98);
 }
 
 ul {
@@ -207,6 +207,22 @@ ul {
     }
 
     .list {
-        width: 250px;
+        width: 200px;
     }
+    .list-btn{
+        font-size: smaller;
+    }
+    .list-item{
+        font-size: 20px;
+    }
+    .input{
+        font-size: smaller;
+        width: 130px;
+    }
+    .card{
+        width: 90px;
+        height: 30px;
+        font-size: smaller;
+    }
+
 } 

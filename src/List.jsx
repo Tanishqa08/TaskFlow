@@ -8,7 +8,7 @@ export default function List({ todos, setTodos }) {
             {todos.map((todo) => (
                 <li key={todo.id} className="list">
                     <span style={todo.isDone ?
-                        { textDecorationLine: "line-through", color: "green" } : {}} className="list-item">
+                        { textDecorationLine: "line-through", color: "purple" } : {}} className="list-item">
                         {todo.task}
                     </span>
                     <div className="list-btn">
