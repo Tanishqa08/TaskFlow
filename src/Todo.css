@@ -205,7 +205,7 @@ ul {
     .container {
         width: 100%;
     }
-
+    
     .list {
         width: 200px;
     }
@@ -224,5 +224,12 @@ ul {
         height: 30px;
         font-size: smaller;
     }
+    .count{
+        font-size: 20px;
+    }
+    .progress{
+        font-size: 15px;
+    }
+    
 
 } 

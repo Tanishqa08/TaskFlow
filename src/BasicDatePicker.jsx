@@ -3,15 +3,15 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import TextField from '@mui/material/TextField';
 
-
-export default function BasicDatePicker() {
+export default function BasicDatePicker({ selectedDate, setSelectedDate }) {
   return (
     <div className="basic-date-picker">
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
+          value={selectedDate}
+          onChange={(newValue) => setSelectedDate(newValue)}
           label="Date"
           slotProps={{ textField: { size: 'small' } }}
-
           sx={{
             width: '190px',
             minWidth: 0,

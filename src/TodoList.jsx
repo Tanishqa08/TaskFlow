@@ -5,6 +5,7 @@ import Inputbox from "./Inputbox";
 import List from "./List";
 import BasicDatePicker from "./BasicDatePicker";
 import ProgressOfTodo from "./ProgressOfTodo";
+import dayjs from "dayjs";
 
 export default function TodoList() {
     let [todos, setTodos] = useState(() => {
@@ -25,12 +26,18 @@ export default function TodoList() {
 
     let [input, setInput] = useState("");
 
+    const [selectedDate, setSelectedDate] = useState(() => {
+        const savedDate = localStorage.getItem("selectedDate");
+        return savedDate ? dayjs(JSON.parse(savedDate)) : null;
+    });
+
     useEffect(() => {
         localStorage.setItem(
-            "todos",
-            JSON.stringify(todos)
+            "selectedDate",
+            JSON.stringify(selectedDate)
         );
-    }, [todos]);
+    }, [selectedDate]);
+
 
     let addNewTask = () => {
         if (input.trim() === "") {
@@ -48,7 +55,8 @@ export default function TodoList() {
 
         <div className="container">
 
-            <BasicDatePicker />
+            <BasicDatePicker selectedDate={selectedDate}
+                setSelectedDate={setSelectedDate} />
             <ProgressOfTodo todos={todos} />
             <Inputbox input={input} setInput={setInput} addNewTask={addNewTask} />
             <List todos={todos} setTodos={setTodos} />
