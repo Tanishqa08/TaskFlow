@@ -205,7 +205,6 @@ ul {
     .container {
         width: 100%;
     }
-    
     .list {
         width: 200px;
     }
@@ -213,11 +212,11 @@ ul {
         font-size: smaller;
     }
     .list-item{
-        font-size: 16px;
+        font-size: 18px;
     }
     .input{
-        font-size: smaller;
-        width: 130px;
+        font-size: 18px;
+        width: 145px;
     }
     .card{
         width: 90px;
