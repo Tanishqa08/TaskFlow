@@ -10,11 +10,9 @@ import dayjs from "dayjs";
 export default function TodoList() {
     let [todos, setTodos] = useState(() => {
         let savedTodos = localStorage.getItem("todos");
-
         if (savedTodos) {
             return JSON.parse(savedTodos);
         }
-
         return [
             {
                 id: uuidv4(),
@@ -24,10 +22,12 @@ export default function TodoList() {
         ];
     });
 
-    let [input, setInput] = useState("");
+    useEffect(() => {
+        localStorage.setItem("todos", JSON.stringify(todos));
+    }, [todos]);
 
-    const [selectedDate, setSelectedDate] = useState(() => {
-        const savedDate = localStorage.getItem("selectedDate");
+    let [selectedDate, setSelectedDate] = useState(() => {
+        let savedDate = localStorage.getItem("selectedDate");
         return savedDate ? dayjs(JSON.parse(savedDate)) : null;
     });
 
@@ -38,6 +38,7 @@ export default function TodoList() {
         );
     }, [selectedDate]);
 
+    let [input, setInput] = useState("");
 
     let addNewTask = () => {
         if (input.trim() === "") {
