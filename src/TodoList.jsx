@@ -52,7 +52,7 @@ export default function TodoList() {
     };
 
     return (<>
-        <h1 style={{ textAlign: "center", marginBottom: "10px", color: "rgb(98, 1, 98)" }}>My tasks</h1>
+        <h1 style={{ textAlign: "center", marginBottom: "10px", color: "rgb(98, 1, 98)" }} className="mytask">My tasks</h1>
 
         <div className="container">
 

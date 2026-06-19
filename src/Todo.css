@@ -230,6 +230,7 @@ ul {
     .progress{
         font-size: 15px;
     }
-    
-
+    .mytask{
+        font-size: 25px;
+    }
 } 
