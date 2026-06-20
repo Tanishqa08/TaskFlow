@@ -205,31 +205,45 @@ ul {
     .container {
         width: 100%;
     }
+    #root{
+        margin: 20px;
+    }
+    
     .list {
         width: 240px;
     }
-    .list-btn{
+
+    .list-btn {
         font-size: smaller;
     }
-    .list-item{
+
+    .list-item {
         font-size: 18px;
     }
-    .input{
+
+    .input {
         font-size: 18px;
         width: 145px;
     }
-    .card{
+
+    .card {
         width: 90px;
         height: 30px;
         font-size: smaller;
     }
-    .count{
+
+    .count {
         font-size: 20px;
     }
-    .progress{
+
+    .progress {
         font-size: 15px;
     }
-    .mytask{
+
+    .mytask {
         font-size: 25px;
-    }
+    } 
 } 
+
+
+
